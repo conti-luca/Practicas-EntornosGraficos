@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    3.a. <a href="http://www.google.com.ar">Click aquí para ir a Google</a> <!--Te lleva a Google en la misma pestaña-->
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a> <!--Te lleva a Google en otra pestaña-->
+<a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help"> <!--es un hipervínculo que al no tener etiqueta de cierre, no hace nada.-->
+<a href="#">Click aquí para ir a Google</a> <!--el hipervínculo no hace nada o te lleva a al inicio de la página-->
+<a href="#arriba">Click aquí para volver arriba</a> <!--no hace nada-->
+<a name="arriba" id="arriba"></a> <!--no hace nada-->
+<!--href indica al link o archivo al que querés ir. target indica si se abre en otra pestaña o en la misma. Type indica al tipo de documento al que apunta el enlace. Hreflang indica el idioma del enlace. Charset especifica la codificación del enlace. Rel define la relación entre el enlace y la página actual. Name le da un nombre para los anclajes. Id le da una identificación al enlace.-->
+
+3.b. <p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p> <!--Un texto que posee una imagen y un enlace que dice click aquí.-->
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p> <!--Un texto que posee una imagen con enlace y dice click aquí.-->
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p> <!--Un texto que posee una imagen con enlace y no dice click aquí.-->
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a href="http://www.google.com.ar">Click aquí</a></p> <!--Un texto que posee una imagen enlazada y luego un texto que dice click quí también enlazado.-->
+
+3.c. <ul>    <!--Una lista desordenada con 3 elementos.-->
+<li>xxx</li> 
+<li>yyy</li> 
+<li>zzz</li> 
+</ul>
+---
+<ol> <!--Una lista ordenada con 3 elementos.-->
+<li>xxx</li> 
+<li>yyy</li> 
+<li>zzz</li> 
+</ol>
+---
+<ol> <!--3 listas ordenadas con 1 elemento cada una.-->
+<li>xxx</li> 
+</ol> 
+<ol> 
+<li value="2">yyy</li> 
+</ol> 
+<ol> 
+<li 
+value="3">zzz</li> 
+</ol>
+---
+<blockquote>  <!--es un bloque de texto que simula ser una lista.-->
+<p>1. xxx<br /> 
+2. yyy<br /> 
+3. zzz</p> 
+</blockquote>
+
+3.d. <table border="1" width="300"> <!--Es una tabla con borde y ancho de 300 con 2 columnas y 3 filas-->
+<tr> 
+<th>Columna 1</th> 
+<th>Columna 2</th> 
+</tr> 
+<tr> 
+<td>Celda 1</td> 
+<td>Celda 2</td> 
+</tr> 
+<tr> 
+<td>Celda 3</td> 
+<td>Celda 4</td> 
+</tr> 
+</table>
+---
+<table border="1" width="300"> <!--La misma tabla, nada más que la primera fila tiene en negritas y centrado el texto-->
+<tr> 
+<td><div align="center"><strong>Colum 
+na1</strong></div></td> 
+<td><div align="center"><strong>Columna 
+2</strong></div></td> 
+</tr> 
+<tr> 
+<td>Celda 1</td> 
+<td>Celda 2</td> 
+</tr> 
+<tr> 
+<td>Celda 3</td> 
+<td>Celda 4</td> 
+</tr> 
+</table>
+
+3.e. <table width="200"> <!--Una tabla de 200 de ancho que tiene un título centrado, y sus filas y columnas son de color sin texto-->
+    <caption>
+        Título
+    </caption>
+    <tr> 
+        <td bgcolor="#dddddd">&nbsp;</td> 
+        <td bgcolor="#dddddd">&nbsp;</td> 
+        <td bgcolor="#dddddd">&nbsp;</td> 
+    </tr> 
+    <tr> 
+        <td bgcolor="#dddddd">&nbsp;</td> 
+        <td bgcolor="#dddddd">&nbsp;</td> 
+        <td bgcolor="#dddddd">&nbsp;</td> 
+    </tr>   
+    </table>
+---
+<table width="200"> <!--Tabla que la primera fila ocupa 3 columnas y está alineado en el centro, y luego 2 filas con 3 columnas.-->
+<tr>
+<td colspan="3"><div 
+align="center">Título</div></td> 
+</tr> 
+<tr> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+</tr> 
+<tr> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+</tr> 
+</table> 
+
+3.f. <table width="200"> <!--Una tabla que tiene una fila que ocupa 3 columnas y tiene texto centrado. La fila de abajo ocupa 2 filas ya que se fusionan, y hay 3 columnas-->
+<tr> 
+<td colspan="3"><div 
+align="center">Título</div></td> 
+</tr> 
+<tr> 
+<td rowspan="2" bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+</tr> 
+<tr> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+</tr> 
+</table> 
+
+<table width="200"> <!--Lo mismo que el anterior, solo que en vez de ocupar 2 filas, ocupa 2 columnas-->
+<tr> 
+<td colspan="3"><div 
+align="center">Título</div></td> 
+</tr> 
+<tr> 
+<td colspan="2" 
+bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+</tr> 
+<tr> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+</tr> 
+</table> 
+---
+3.g.<table width="200" border="1"> <!--Una tabla con bordes, una fila con celda que fusiona 3 columnas, luego una fila de tamaño de 2x2 de celda y por último una fila de mitad de tamaño-->
+<tr> 
+<td colspan="3"><div 
+align="center">Título</div></td> 
+</tr> 
+<tr> 
+<td colspan="2"rowspan="2">&nbsp;</td> 
+<td>&nbsp;</td> 
+</tr> 
+<tr> 
+<td width="50%">&nbsp;</td> 
+</tr> 
+</table> 
+
+<table width="200" border="1" cellpadding="0" cellspacing="0"> <!--Una tabla igual a la anterior, solo que no hay espacio extra dentro de las celdas y no hay espacios entre las celdas.-->
+<tr> 
+<td colspan="2"><div 
+align="center">Título</div></td> 
+</tr> 
+<tr> 
+<td rowspan="2">&nbsp;</td> 
+<td>&nbsp;</td> 
+</tr> 
+<tr> 
+<td width="50%">&nbsp;</td> 
+</tr> 
+</table> 
+
+3.h.<form id="form1" name="form1" action="procesar.php" method="post" target="_blank"> 
+<fieldset> 
+<legend>LOGIN</legend> 
+Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br /> 
+Clave: <input type="password" id="clave1" name="clave1" value="xxx" /> 
+</fieldset> 
+<input type="submit" id="boton1" name="boton1" value="Enviar" /> 
+</form> 
+---
+<form id="form2" name="form2" action="" method="get" target="_blank"> 
+LOGIN<br /> 
+<label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br /> 
+<label>Clave: <input type="text" id="clave2" name="clave2" /></label><br /> 
+<input type="submit" id="boton2" name="boton2" value="Enviar" /> 
+</form> 
+---
+<form id="form3" name="form3" action="mailto:xx@xx.com" enctype=text/plain method="p 
+ost" target="_blank"> 
+<fieldset> 
+<legend>LOGIN</legend> 
+Usuario: <input type="text" id="usu3" name="usu3" /><br /> 
+Clave: <input type="password" id="clave3" name="clave3" /> 
+</fieldset> 
+<input type="reset" id="boton3" name="boton3" value= 
+"Enviar" /> 
+</form> 
+<!--3 cuestionarios, el primero al presionar enviar te lleva a un archivo php por el método post y tiene ya escrito texto en los inputs, el segundo no tiene un cuadro que remarque el formulario, usa método get, y el tercero tiene de acción enviar un mail y le envía texto plano, y el botón resetea los campos.-->
+
+3.i. <label>Botón 1 
+<button type="button" name="boton1" id="boton1"> 
+<img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br /> 
+<b>CLICK AQUÍ</b></button></label> 
+---
+<label>Botón 2 
+<input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" /> 
+</label> 
+<!--La diferencia es que el primero es un botón con imagen y el segundo no-->
+
+3.j. <p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br /> 
+<label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p> 
+---
+<p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br /> 
+<label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p> 
+<!--Son opciones, el primer ejemplo te deja seleccionar solo una opción, y en el segundo te deja elegir cualqier opción.-->
+
+3.k. <select name="lista"> 
+<optgroup label="Caso 1"> 
+<option>Mayo</option> 
+<option>Junio</option> 
+</optgroup> 
+<optgroup label="Caso 2"> 
+<option>Mayo</option> 
+<option>Junio</option> 
+</optgroup> 
+</select> 
+---
+<select name="lista[]" multiple="multiple"> 
+<optgroup label=" Caso 1"> 
+<option>Mayo</option> 
+<option>Junio</option> 
+</optgroup> 
+<optgroup label=" Caso 2"> 
+<option>Mayo</option> 
+<option>Junio</option> 
+</optgroup> 
+</select> 
+<!--Son 2 selectores, la diferencia es que el primero es desplegable, y el segundo ya está desplegado y se puede scrollear.-->
+</body>
+</html>
